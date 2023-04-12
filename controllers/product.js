@@ -13,7 +13,7 @@ class productController {
             })
             if (result) {
                 res.status(409).json({msg: 'Product already exists.'})
-            const found = await study_plan.findOne({
+            const found = await product.findOne({
                     where: {
                         productId : productId
                     }

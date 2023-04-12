@@ -8,16 +8,14 @@ const errorHandling = require('./middlewares/errorHandling')
 // const router = require('./routes');
 
 const indexRoutes = require("./routes/index")
-const studentRoutes = require("./routes/student");
-const subjectRoutes = require('./routes/subject');
-const studyPlanRoutes = require('./routes/study_plan')
+const productRoutes = require("./routes/product");
+const userRoutes = require('./routes/user');
 
 const errorHandler = require("./middlewares/errorHandler");
 
 app.use("/", indexRoutes);
-app.use("/student", studentRoutes);
-app.use("/subject", subjectRoutes);
-app.use("/study_plan", studyPlanRoutes);
+app.use("/product", productRoutes);
+app.use("/user", userRoutes);
 
 
 // app.use('/', routes)
